@@ -1,34 +1,33 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
   siteMetadata: {
     SEOdescription:
-      "I specialise in Home Improvement, Electrical, (HVAC) Air Conditioning and Ventilation, (LPG) Liquid Petroleum Gas installations, and TIG welding.",
-    SEOkeywords: "Eckley Air Conditioning ",
+      'I specialise in Home Improvement, Electrical, (HVAC) Air Conditioning and Ventilation, (LPG) Liquid Petroleum Gas installations, and TIG welding.',
+    SEOkeywords: 'Eckley Air Conditioning ',
     About:
-      "I specialise in Home Improvement, Electrical, (HVAC) Air Conditioning and Ventilation, (LPG) Liquid Petroleum Gas installations,and TIG welding. So give me a call on 083 264 7064 so that I can help you out. Please explore the website further to see some of my work.",
-    siteUrl: "https://dpeckleyprojects.now.sh",
-    twitterUsername: "kheaganD",
-    image: "./Renovations-min.jpg",
+      'I specialise in Home Improvement, Electrical, (HVAC) Air Conditioning and Ventilation, (LPG) Liquid Petroleum Gas installations,and TIG welding. So give me a call on 083 264 7064 so that I can help you out. Please explore the website further to see some of my work.',
+    siteUrl: 'https://dpeckleyprojects.now.sh',
+    twitterUsername: 'kheaganD',
+    image: './Renovations-min.jpg',
     social: [
       {
-        name: "Facebook",
-        link: "https://web.facebook.com/?_rdc=1&_rdr",
+        name: 'Facebook',
+        link: 'https://web.facebook.com/?_rdc=1&_rdr',
       },
       {
-        name: "Twitter",
-        link: "https://twitter.com/dp_eckley",
+        name: 'Twitter',
+        link: 'https://twitter.com/dp_eckley',
       },
     ],
-
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-155301000-1",
+        trackingId: 'UA-155301000-1',
       },
     },
     `gatsby-plugin-theme-ui`,
@@ -45,6 +44,9 @@ module.exports = {
           {
             family: `Russo One`,
           },
+          {
+            family: 'Roboto'
+          }
         ],
       },
     },
@@ -72,8 +74,8 @@ module.exports = {
       options: {
         host: 'https://davideckleyprojects.now.sh',
         sitemap: 'https://davideckleyprojects.now.sh/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,

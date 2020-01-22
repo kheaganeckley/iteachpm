@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Helmet } from "react-helmet"
-import { graphql, useStaticQuery } from "gatsby"
+import { jsx } from 'theme-ui'
+import { Helmet } from 'react-helmet'
+import { graphql, useStaticQuery } from 'gatsby'
 
 // const query = graphql`
 //   {
@@ -61,7 +61,4 @@ import { graphql, useStaticQuery } from "gatsby"
 //   )
 // }
 
-
-export default ()=>(<div>
-  sdsfsdf
-</div>)
+export default () => <div>sdsfsdf</div>

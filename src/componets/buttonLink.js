@@ -1,26 +1,26 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Link } from "gatsby"
+import { jsx } from 'theme-ui'
+import { Link } from 'gatsby'
 
-export default ({ to, children, margin = "5px", fontSize = "17px" }) => (
+export default ({ to, children, margin = '5px', fontSize = '17px' }) => (
   <Link
     sx={{
       fontSize,
-      textDecoration: "none",
-      borderRadius: "3px",
-      border: "3px",
-      borderStyle: "solid",
-      borderColor: "buttonBorder",
-      backgroundColor: "buttonBG",
-      boxShadow: "0 8px 12px 0 rgba(0,0,0,0.2)",
-      letterSpacing: "2px",
+      textDecoration: 'none',
+      borderRadius: '3px',
+      border: '3px',
+      borderStyle: 'solid',
+      borderColor: 'buttonBorder',
+      backgroundColor: 'buttonBG',
+      boxShadow: '0 8px 12px 0 rgba(0,0,0,0.2)',
+      letterSpacing: '2px',
       margin,
-      textAlign: "center",
-      color: "buttonText",
-      padding: "5px",
-      ":hover": {
-        backgroundColor: "buttonText",
-        color: "buttonBG",
+      textAlign: 'center',
+      color: 'buttonText',
+      padding: '5px',
+      ':hover': {
+        backgroundColor: 'buttonText',
+        color: 'buttonBG',
       },
     }}
     to={to}

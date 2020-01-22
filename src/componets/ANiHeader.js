@@ -1,23 +1,23 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import posed from "react-pose"
+import { jsx } from 'theme-ui'
+import posed from 'react-pose'
 // Full React Pose Text documentation can be found at
 // https://popmotion.io/pose/api/react-pose-text
 
 const AniHeader = posed.h1({
-  exit: { opacity: 0, y: 20, x: "-150%" },
+  exit: { opacity: 0, y: 20, x: '-150%' },
   enter: {
     opacity: 1,
     y: 0,
-    x: "0",
+    x: '0',
   },
 })
 
-export default ({ children, fontSize = "2.5em" }) => (
+export default ({ children, fontSize = '2.5em' }) => (
   <AniHeader
     sx={{
       fontSize,
-      textAlign: "center",
+      textAlign: 'center',
     }}
     initialPose="exit"
     pose="enter"

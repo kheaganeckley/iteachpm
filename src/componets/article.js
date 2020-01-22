@@ -1,16 +1,34 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx } from 'theme-ui'
 
-export default ({ title, paragrph}) => (
-    <article
-    sx={{
-        margin : '10px'
 
-    }}
-    >
+const headerstyle ={
+  textTransform: 'uppercase',
+  letterSpacing: '2px',
+  fontWeight:'bold'
+}
+
+const articlestyle ={
+  margin : '10px',
+  marginLeft : '30px',
+  width: '100%',
+  fontFamily: 'Roboto',
+  letterSpacing: '1px'
+}
+
+
+
+
+
+export default ({ title, children }) => (
+  <article
+    sx={articlestyle}
+  >
     <h3
-    sx={{textDecorationLine: 'underline', textDecorationColor:'trim', textUnderlineOffset:'5px'}}
-    >{title}</h3>
-    <p>{paragrph}</p>
-    </article>
+      sx={headerstyle}
+    >
+      {title}
+    </h3>
+    {children}
+  </article>
 )

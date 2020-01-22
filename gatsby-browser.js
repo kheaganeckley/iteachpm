@@ -1,1 +1,1 @@
-import "./src/componets/style.css"
+import './src/componets/style.css'
