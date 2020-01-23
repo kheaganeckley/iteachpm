@@ -27,7 +27,8 @@ const gaintCardStyle = {
   boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
   opacity : 0.8,
   backgroundColor: 'backgroundGaintCard',
-  borderRadius: '15px'
+  borderRadius: '15px',
+  padding: '20px'
 }
 
 const imageStyle = {
@@ -105,7 +106,7 @@ export default ({
         <q 
         sx={herodescription}
         >
-        It is about time to take your next step in your carear. My courses on project managent is about creating descion makers.
+        IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSES ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.
         </q> 
 
 

@@ -11,8 +11,6 @@ const headerstyle ={
 }
 
 const articlestyle ={
-  margin : '10px',
-  marginLeft : '30px',
   width: '100%',
   fontFamily: 'Roboto',
   letterSpacing: '1px'

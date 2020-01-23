@@ -13,7 +13,7 @@ const AniHeader = posed.h1({
   },
 })
 
-export default ({ children, fontSize = '2.5em' }) => (
+export default ({ children, fontSize = '2.2em' }) => (
   <AniHeader
     sx={{
       fontSize,
