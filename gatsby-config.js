@@ -4,6 +4,10 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
+    title: 'pminventions',
+    description:'Project managment courses',
+    author: 'kheagan',
+    themeColor:'#232e36',
     SEOdescription:
       'I specialise in Home Improvement, Electrical, (HVAC) Air Conditioning and Ventilation, (LPG) Liquid Petroleum Gas installations, and TIG welding.',
     SEOkeywords: 'Eckley Air Conditioning ',
@@ -46,9 +50,6 @@ module.exports = {
           },
           {
             family: 'Roboto'
-          },
-          {
-            family: 'Anton'
           }
         ],
       },
@@ -63,11 +64,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Daivd Eckley Projects`,
-        short_name: `D.E.P.`,
+        name: `Project managment inventions`,
+        short_name: `PMINVENTIONS`,
         start_url: `/`,
-        background_color: `black`,
-        theme_color: `black`,
+        background_color: `#232e36`,
+        theme_color: `#232e36`,
         display: `minimal-ui`,
         icon: `src/images/DPECKLEYPROJECTS500.png`, // This path is relative to the root of the site.
       },

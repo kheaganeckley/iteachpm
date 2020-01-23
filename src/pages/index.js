@@ -7,6 +7,8 @@ import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Footer from '../componets/footer'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import SeoGraphql from '../componets/SeoGraphql'
+
 
 // style
 
@@ -92,6 +94,7 @@ export default ({
   },
 }) => (
   <div sx={layoutStyle}>
+    <SeoGraphql/>
     <ANiHeader>
       PM<span sx={{ color: 'trim' }}>I</span>NVENTIONS
     </ANiHeader>
