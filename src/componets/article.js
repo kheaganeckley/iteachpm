@@ -1,11 +1,13 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
+import {Zoom} from 'react-reveal'
 
 
 const headerstyle ={
   textTransform: 'uppercase',
   letterSpacing: '2px',
-  fontWeight:'bold'
+  fontWeight:'bold',
+  color: 'trim'
 }
 
 const articlestyle ={
@@ -21,7 +23,8 @@ const articlestyle ={
 
 
 export default ({ title, children }) => (
-  <article
+ <Zoom>
+    <article
     sx={articlestyle}
   >
     <h3
@@ -31,4 +34,5 @@ export default ({ title, children }) => (
     </h3>
     {children}
   </article>
+ </Zoom>
 )

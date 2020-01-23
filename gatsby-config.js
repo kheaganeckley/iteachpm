@@ -46,6 +46,9 @@ module.exports = {
           },
           {
             family: 'Roboto'
+          },
+          {
+            family: 'Anton'
           }
         ],
       },

@@ -19,20 +19,43 @@ const layoutStyle = {
   color: 'text',
 }
 
-const ArticleLayoutStyle = {
-  width: '80%',
+const gaintCardStyle = {
+  width: '90%',
   display: 'flex',
-  flexWrap: 'wrap',
-  flexDirection: 'row',
+  flexDirection: 'column',
   margin: '25px',
+  boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
+  opacity : 0.8,
+  backgroundColor: 'backgroundGaintCard',
+  borderRadius: '15px'
 }
 
 const imageStyle = {
-  width: '40%',
-  height: '40%',
+  width: '90px',
+  height: '100px',
   borderRadius: '50%',
-  marginRight: '40px',
 }
+
+const heroStyle = {
+  width: '100%',
+  height: '300px',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center'
+}
+
+const herodescription = {
+  textTransform: 'uppercase',
+  letterSpacing: '2px',
+  fontWeight:'bold',
+  color: 'trim',
+  fontFamily :' Russo One',
+  textAlign: 'center',
+  width: '60%',
+  marginTop: '10px'
+}
+
 
 //queries
 export const query = graphql`
@@ -72,8 +95,23 @@ export default ({
       PM<span sx={{ color: 'trim' }}>I</span>NVENTIONS
     </ANiHeader>
     <LineStyle />
-    <div sx={ArticleLayoutStyle}>
-      <Img sx={imageStyle} fluid={fluid} />
+    
+    
+      <div
+      sx = {heroStyle}
+      >
+        <Img sx={imageStyle} fluid={fluid} />
+
+        <q 
+        sx={herodescription}
+        >
+        It is about time to take your next step in your carear. My courses on project managent is about creating descion makers.
+        </q> 
+
+
+      </div>
+      
+    <div sx={gaintCardStyle}>
       {edges.map(({ node: { frontmatter: { title }, body } }) => (
         <Article key={title} title={title}>
           <MDXRenderer>{body}</MDXRenderer>
