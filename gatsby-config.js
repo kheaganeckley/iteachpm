@@ -5,9 +5,25 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'pminventions',
-    description:'Project managment courses',
+    description: 'Project managment courses',
+    about:
+      'IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSES ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.',
+    infoBoxes: [
+      {
+        name: 'contact',
+        description: 'My contact details are',
+      },
+      {
+        name: 'about',
+        description: 'This is a so course ',
+      },
+      {
+        name: 'pricing',
+        description: 'The price is 5000',
+      },
+    ],
     author: 'kheagan',
-    themeColor:'#232e36',
+    themeColor: '#232e36',
     SEOdescription:
       'I specialise in Home Improvement, Electrical, (HVAC) Air Conditioning and Ventilation, (LPG) Liquid Petroleum Gas installations, and TIG welding.',
     SEOkeywords: 'Eckley Air Conditioning ',
@@ -49,8 +65,8 @@ module.exports = {
             family: `Russo One`,
           },
           {
-            family: 'Roboto'
-          }
+            family: 'Roboto',
+          },
         ],
       },
     },

@@ -1,44 +1,45 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import {graphql, useStaticQuery} from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
 const queryseo = graphql`
-{
-    site{
-        siteMetadata{
-            SEOdescription
-            SEOkeywords
-            description
-            author
-            image
-            siteUrl
-            themeColor
-            title
-            twitterUsername
-        }
+  {
+    site {
+      siteMetadata {
+        SEOdescription
+        SEOkeywords
+        description
+        author
+        image
+        siteUrl
+        themeColor
+        title
+        twitterUsername
+      }
     }
-}
+  }
 `
 
-
-
-
 export default () => {
-    const {site:{
-        siteMetadata:{
-            SEOdescription,
-            SEOkeywords,
-            description,
-            author,
-            image,
-            siteUrl,
-            themeColor,
-            title,
-            twitterUsername  ,
-    }}} = useStaticQuery(queryseo)
-    return <Helmet>
-           <html lang="en" amp />
+  const {
+    site: {
+      siteMetadata: {
+        SEOdescription,
+        SEOkeywords,
+        description,
+        author,
+        image,
+        siteUrl,
+        themeColor,
+        title,
+        twitterUsername,
+      },
+    },
+  } = useStaticQuery(queryseo)
+  return (
+    <Helmet>
+      <html lang="en" amp />
       <title>{`${title} | ${description}`}</title>
       <meta name="description" content={SEOdescription} />
       <meta name="keywords" content={SEOkeywords} />
@@ -53,7 +54,7 @@ export default () => {
       <meta property="og:image" content={`${siteUrl}${image}`} />
       <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="300" />
-      <meta property='og:site_name' content={title}/>
+      <meta property="og:site_name" content={title} />
       {/* twitter card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={twitterUsername} />
@@ -61,8 +62,5 @@ export default () => {
       <meta name="twitter:description" content={SEOdescription} />
       <meta name="twitter:image" content={`${siteUrl}${image}`} />
     </Helmet>
+  )
 }
-
-
-
-
