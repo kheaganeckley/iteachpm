@@ -1,6 +1,21 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import { FiFacebook, FiTwitter } from 'react-icons/fi'
+import {useStaticQuery, graphql} from 'gatsby'
+
+
+const query = graphql`
+{
+  site{
+    siteMetadata{
+      facebook
+      twitter
+    }
+  }
+}
+`
+
+
 
 const footerStyle = {
   fontSize: '20px',
@@ -18,14 +33,26 @@ const LinkStyle = {
   color: 'white',
 }
 
-export default () => (
-  <div sx={footerStyle}>
-    <h3> I am on </h3>
-    <a href="https://twitter.com/pminventions" sx={LinkStyle}>
-      facebook <FiFacebook />
-    </a>
-    <a href="https://www.facebook.com/PMINVENTIONS/" sx={LinkStyle}>
-      twitter <FiTwitter />
-    </a>
-  </div>
-)
+export default () =>{
+
+  const {site:{
+    siteMetadata:{
+      twitter,
+      facebook
+    }
+  }} = useStaticQuery(query)
+
+
+
+  return (
+    <div sx={footerStyle}>
+      <h3> I am on </h3>
+      <a href={facebook} sx={LinkStyle}>
+        facebook <FiFacebook />
+      </a>
+      <a href={twitter} sx={LinkStyle}>
+        twitter <FiTwitter />
+      </a>
+    </div>
+  )
+} 

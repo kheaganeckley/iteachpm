@@ -10,38 +10,30 @@ module.exports = {
       'IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSES ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.',
     infoBoxes: [
       {
+        name: 'About',
+        description: 'This course prepares you for PMP® exam so that, once passed, you will be a certified project manger. This means that in the work place you can become the decision maker and not the one taking orders.',
+      }, 
+      {
         name: 'contact',
-        description: 'My contact details are',
+        description: 'I am available on (083) 264 7064. Otherwise, you are welcome to email me at davideckley88@gmail.com. I look foward to meeting you.',
       },
       {
-        name: 'about',
-        description: 'This is a so course ',
-      },
-      {
-        name: 'pricing',
-        description: 'The price is 5000',
+        name: 'Pricing',
+        description: 'R5000 for a 5 day fast track, or, 3 months evening class.',
       },
     ],
     author: 'kheagan',
     themeColor: '#232e36',
     SEOdescription:
-      'I specialise in Home Improvement, Electrical, (HVAC) Air Conditioning and Ventilation, (LPG) Liquid Petroleum Gas installations, and TIG welding.',
-    SEOkeywords: 'Eckley Air Conditioning ',
+      'IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSES ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.',   
+    SEOkeywords: 'David Eckley Project Management',
     About:
-      'I specialise in Home Improvement, Electrical, (HVAC) Air Conditioning and Ventilation, (LPG) Liquid Petroleum Gas installations,and TIG welding. So give me a call on 083 264 7064 so that I can help you out. Please explore the website further to see some of my work.',
+      'IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSES ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.',   
     siteUrl: 'https://dpeckleyprojects.now.sh',
     twitterUsername: 'kheaganD',
     image: './Renovations-min.jpg',
-    social: [
-      {
-        name: 'Facebook',
-        link: 'https://web.facebook.com/?_rdc=1&_rdr',
-      },
-      {
-        name: 'Twitter',
-        link: 'https://twitter.com/dp_eckley',
-      },
-    ],
+    facebook: 'https://web.facebook.com/?_rdc=1&_rdr',
+    twitter: 'https://twitter.com/dp_eckley',
   },
   plugins: [
     {

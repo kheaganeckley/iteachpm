@@ -5,7 +5,7 @@ import Article from './article'
 export default ({ children, title }) => (
   <div
     sx={{
-      width: '90%',
+      width: '70%',
       display: 'flex',
       flexDirection: 'column',
       margin: '10px',
