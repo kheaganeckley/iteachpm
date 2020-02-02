@@ -26,6 +26,7 @@ const imageStyle = {
     textAlign: 'center',
     width: '60%',
     marginTop: '10px',
+    fontSize: 'large'
   }
 
 

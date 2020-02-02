@@ -44,7 +44,15 @@ export default ({ opacity, TOGGLE }) => {
     <div sx={curtainStyle}>
       <Button
         onClick={TOGGLE}
-        sx={{ backgroundColor: 'modal', color: 'modalText' }}
+        sx={{ 
+          boxShadow: 'none',
+          backgroundColor: 'modal',
+          color: 'modalText',
+          borderStyle: 'solid',
+          borderWidth: '5px',
+          borderColor: 'black',
+        
+        }}
       >
         <FiXCircle
           sx={{
@@ -63,8 +71,11 @@ export default ({ opacity, TOGGLE }) => {
           width: '50%',
           minWidth: '350px',
           opacity,
-          borderRadius: '50px',
+          borderRadius: '20px',
           padding: '20px',
+          borderStyle: 'solid',
+          borderWidth: '5px',
+          borderColor: 'black'
         }}
       >
         {edges.map(({ node: { frontmatter: { title }, body } }) => (

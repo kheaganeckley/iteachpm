@@ -7,19 +7,19 @@ module.exports = {
     title: 'pminventions',
     description: 'Project managment courses',
     about:
-      'IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSES ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.',
+      'IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSE ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.',
     infoBoxes: [
       {
         name: 'About',
-        description: 'This course prepares you for PMP® exam so that, once passed, you will be a certified project manger. This means that in the work place you can become the decision maker and not the one taking orders.',
+        description: 'This course prepares you for PMP® exam so that, once passed, you can become a certified project manger. In the work place, this means that you will be a decision maker and not the one taking orders.',
       }, 
+      {
+        name: 'Pricing',
+        description: 'It is R5000 for a 5 day fast track, or alternativly, R5000 for 3 months evening classes.',
+      },
       {
         name: 'contact',
         description: 'I am available on (083) 264 7064. Otherwise, you are welcome to email me at davideckley88@gmail.com. I look foward to meeting you.',
-      },
-      {
-        name: 'Pricing',
-        description: 'R5000 for a 5 day fast track, or, 3 months evening class.',
       },
     ],
     author: 'kheagan',

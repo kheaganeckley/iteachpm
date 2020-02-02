@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { Zoom } from 'react-reveal'
+import Pulse from 'react-reveal/Pulse'
 
 const headerstyle = {
   textTransform: 'uppercase',
@@ -16,10 +16,10 @@ const articlestyle = {
 }
 
 export default ({ title, children }) => (
-  <Zoom>
+  <Pulse>
     <article sx={articlestyle}>
       <h3 sx={headerstyle}>{title}</h3>
       {children}
     </article>
-  </Zoom>
+  </Pulse>
 )

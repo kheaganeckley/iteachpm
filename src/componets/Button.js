@@ -7,15 +7,16 @@ export default props => (
     sx={{
       fontSize: '17px',
       textDecoration: 'none',
-      borderRadius: '15px',
+      borderRadius: '6px',
       outline: 'none',
       border: 'none',
       backgroundColor: 'trim',
-      boxShadow: '0 8px 12px 0 rgba(0,0,0,0.2)',
+      boxShadow: '9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5)',
       letterSpacing: '2px',
       textAlign: 'center',
       margin: '20px',
       color: 'white',
+      cursor: 'pointer',
       padding: '15px',
       ':hover': {
         backgroundColor: 'black',

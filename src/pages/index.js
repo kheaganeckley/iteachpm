@@ -10,6 +10,8 @@ import { Fragment, useState } from 'react'
 import Button from '../componets/Button'
 import InfoBox from '../componets/InfoBox'
 import Hero from '../componets/hero'
+import {FiSearch} from 'react-icons/fi'
+
 
 // style
 
@@ -76,7 +78,7 @@ export default ({
           <InfoBox key={name} title={name}>{description}</InfoBox>
         ))}
         
-        <Button onClick={HANDLE_CLICK}> View more </Button>
+        <Button onClick={HANDLE_CLICK}> VIEW MORE <FiSearch/> </Button>
         <Footer />
       </div>
     </Fragment>

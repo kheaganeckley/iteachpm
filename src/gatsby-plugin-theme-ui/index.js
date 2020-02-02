@@ -1,12 +1,12 @@
 export default {
   initialColorMode: 'normal',
   colors: {
-    text: '#fff',
-    background: '#171e23',
+    text: '#05232e',
+    background:  '#E0E5EC',//'#171e23',
     backgroundGaintCard: '#232e36',
-    trim: '#1a5782', //'#9e0000',
+    trim: '#267dbb', //'#9e0000',
     footer: '#1a5782',
-    modal: '#dfecf5',
+    modal: '#ccd1d9',
     modalText: 'black',
   },
 }
