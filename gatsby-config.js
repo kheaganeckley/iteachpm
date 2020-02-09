@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         name: 'contact',
-        description: 'I am available on (083) 264 7064. Otherwise, you are welcome to email me at davideckley88@gmail.com. I look foward to meeting you.',
+        description: 'I am available on (083) 264 7064. Otherwise, you are welcome to email me at davideckley88@gmail.com. I look forward to meeting you.',
       },
     ],
     author: 'kheagan',
