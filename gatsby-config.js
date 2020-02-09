@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Project managment inventions`,
+        name: `I TEACH PM`,
         short_name: `ITeachPM`,
         start_url: `/`,
         background_color: '#5e0808', // `#267dbb`,
