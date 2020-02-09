@@ -4,10 +4,10 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'pminventions',
+    title: 'pmlearn',
     description: 'Project managment courses',
     about:
-      'IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSE ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.',
+      'It is about time to take your next step in YOUR CAREER. My course on PROJECT MANAGEMENT will make you a DECISION MAKER.',
     infoBoxes: [
       {
         name: 'About',
@@ -15,7 +15,7 @@ module.exports = {
       }, 
       {
         name: 'Pricing',
-        description: 'It is R5000 for a 5 day fast track, or alternativly, R5000 for 3 months evening classes.',
+        description: 'It is R6000 for a 5 day fast track, or alternativly, R5000 for 3 months evening classes.',
       },
       {
         name: 'contact',
@@ -23,7 +23,7 @@ module.exports = {
       },
     ],
     author: 'kheagan',
-    themeColor: '#232e36',
+    themeColor: '#5e0808',//'#267dbb',
     SEOdescription:
       'IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSES ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.',   
     SEOkeywords: 'David Eckley Project Management',
@@ -31,17 +31,17 @@ module.exports = {
       'IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSES ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.',   
     siteUrl: 'https://dpeckleyprojects.now.sh',
     twitterUsername: 'kheaganD',
-    image: './Renovations-min.jpg',
+    image: './DAD.jpg',
     facebook: 'https://web.facebook.com/?_rdc=1&_rdr',
     twitter: 'https://twitter.com/dp_eckley',
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-155301000-1',
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-155301000-1',
+    //   },
+    // },
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
@@ -53,9 +53,6 @@ module.exports = {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Russo One`,
-          },
           {
             family: 'Roboto',
           },
@@ -75,10 +72,10 @@ module.exports = {
         name: `Project managment inventions`,
         short_name: `PMINVENTIONS`,
         start_url: `/`,
-        background_color: `#232e36`,
-        theme_color: `#232e36`,
-        display: `minimal-ui`,
-        icon: `src/images/DPECKLEYPROJECTS500.png`, // This path is relative to the root of the site.
+        background_color: '#5e0808', // `#267dbb`,
+        theme_color: '#5e0808',//`#267dbb`,
+        display: `standalone`,
+        icon: `src/images/DPECKLEYPROJECTS500.jpg`, // This path is relative to the root of the site.
       },
     },
     {

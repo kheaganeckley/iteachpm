@@ -19,7 +19,7 @@ export default props => (
       cursor: 'pointer',
       padding: '15px',
       ':hover': {
-        backgroundColor: 'black',
+        backgroundColor: 'hover',
         color: 'white',
       },
     }}

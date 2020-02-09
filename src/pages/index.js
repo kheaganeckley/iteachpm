@@ -5,7 +5,7 @@ import ANiHeader from '../componets/ANiHeader'
 import { graphql } from 'gatsby'
 import Footer from '../componets/footer'
 import SeoGraphql from '../componets/SeoGraphql'
-import Curtian from '../componets/curtain'
+import Modal from '../componets/modal'
 import { Fragment, useState } from 'react'
 import Button from '../componets/Button'
 import InfoBox from '../componets/InfoBox'
@@ -30,7 +30,7 @@ export const query = graphql`
   query MyImageQuery {
     file(relativePath: { eq: "DAD.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 90){
           ...GatsbyImageSharpFluid
         }
       }
@@ -63,13 +63,18 @@ export default ({
 
   return (
     <Fragment>
-      <Curtian opacity={Model} TOGGLE={HANDLE_CLICK} />
+      <Modal opacity={Model} TOGGLE={HANDLE_CLICK} />
       <div sx={layoutStyle}>
         <SeoGraphql />
 
-        <ANiHeader>
-          PM<span sx={{ color: 'trim' }}>I</span>NVENTIONS
-        </ANiHeader>
+        <ANiHeader
+        >
+          I
+        <span sx={{
+                 background: '-webkit-linear-gradient(#eee, #333)',
+                 WebkitBackgroundClip: 'text',
+                 WebkitTextFillColor: 'transparent'
+        }}>TEACH</span>PM</ANiHeader>
         <LineStyle />
 
         <Hero fluid={fluid} about={about} />

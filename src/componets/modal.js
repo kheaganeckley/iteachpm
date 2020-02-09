@@ -6,7 +6,7 @@ import Article from './article'
 import { FiXCircle } from 'react-icons/fi'
 import Button from './Button'
 
-const curtainStyle = {
+const modalStyle = {
   width: '100%',
   height: '100%',
   position: 'fixed',
@@ -41,7 +41,7 @@ export default ({ opacity, TOGGLE }) => {
   if (opacity === 0) return null
 
   return (
-    <div sx={curtainStyle}>
+    <div sx={modalStyle}>
       <Button
         onClick={TOGGLE}
         sx={{ 
@@ -69,7 +69,7 @@ export default ({ opacity, TOGGLE }) => {
           color: 'modalText',
           height: '400px',
           width: '50%',
-          minWidth: '350px',
+          minWidth: '250px',
           opacity,
           borderRadius: '20px',
           padding: '20px',

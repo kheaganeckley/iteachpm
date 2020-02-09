@@ -4,13 +4,20 @@ import Img from 'gatsby-image'
 
 const imageStyle = {
     width: '90px',
-    height: '100px',
+    height: '110px',
+    minWidth : '90px',
+    maxWidth : '90px',
+    minHeight : '100px',
     borderRadius: '50%',
+    // borderSize : '5px',
+    // borderStyle : 'solid',
+    // borderColor: 'trim',
+    paddingLeft: '10px'
   }
   
   const heroStyle = {
     width: '100%',
-    height: '300px',
+    height: '400px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -18,11 +25,11 @@ const imageStyle = {
   }
 
   const herodescription = {
-    textTransform: 'uppercase',
+    //textTransform: 'uppercase',
     letterSpacing: '2px',
-    fontWeight: 'bold',
+    fontWeight: 900,
     color: 'trim',
-    fontFamily: ' Russo One',
+    fontFamily: ' Roboto',
     textAlign: 'center',
     width: '60%',
     marginTop: '10px',
@@ -33,6 +40,14 @@ const imageStyle = {
 export default ({fluid, about}) => (
     <div sx={heroStyle}>
         <Img sx={imageStyle} fluid={fluid} />
+        <hr sx={{
+          width: '70%',
+          borderColor: 'trim'
+        }}/>
         <q sx={herodescription}>{about}</q>
+        <hr sx={{
+          width: '50%',
+          borderColor: 'trim'
+        }}/>
     </div>
 )
