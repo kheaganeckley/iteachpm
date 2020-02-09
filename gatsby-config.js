@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'pmlearn',
+    title: 'I teach PM',
     description: 'Project managment courses',
     about:
       'It is about time to take your next step in YOUR CAREER. My course on PROJECT MANAGEMENT will make you a DECISION MAKER.',
@@ -29,7 +29,7 @@ module.exports = {
     SEOkeywords: 'David Eckley Project Management',
     About:
       'IT IS ABOUT TIME TO TAKE YOUR NEXT STEP IN YOUR CAREER. MY COURSES ON PROJECT MANAGEMENT IS ABOUT CREATING DECISION MAKERS.',   
-    siteUrl: 'https://dpeckleyprojects.now.sh',
+    siteUrl: 'https://iteachpm.com',
     twitterUsername: 'kheaganD',
     image: './DAD.jpg',
     facebook: 'https://web.facebook.com/?_rdc=1&_rdr',
@@ -70,7 +70,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Project managment inventions`,
-        short_name: `PMINVENTIONS`,
+        short_name: `ITeachPM`,
         start_url: `/`,
         background_color: '#5e0808', // `#267dbb`,
         theme_color: '#5e0808',//`#267dbb`,
@@ -81,8 +81,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://davideckleyprojects.now.sh',
-        sitemap: 'https://davideckleyprojects.now.sh/sitemap.xml',
+        host: 'https://iteachpm.com',
+        sitemap: 'https://iteachpm.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
