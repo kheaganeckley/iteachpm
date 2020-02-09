@@ -15,7 +15,7 @@ module.exports = {
       }, 
       {
         name: 'Pricing',
-        description: 'It is R6000 for a 5 day fast track, or alternativly, R5000 for 3 months evening classes.',
+        description: 'It is R6000 for a 5 day fast track, or alternativly, R6000 for 3 months evening classes.',
       },
       {
         name: 'contact',
