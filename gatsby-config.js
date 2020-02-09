@@ -75,7 +75,7 @@ module.exports = {
         background_color: '#5e0808', // `#267dbb`,
         theme_color: '#5e0808',//`#267dbb`,
         display: `standalone`,
-        icon: `src/images/DPECKLEYPROJECTS500.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/DPECKLEYPROJECTS500.png`, // This path is relative to the root of the site.
       },
     },
     {
