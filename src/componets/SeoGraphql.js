@@ -44,6 +44,7 @@ export default () => {
       <meta name="description" content={SEOdescription} />
       <meta name="keywords" content={SEOkeywords} />
       <meta name="author" content={author} />
+      <meta name="google-site-verification" content="QZ_Wpgkd0apczJIUu70cCeLZiQ8wJ21X8Hq4RlcQpNE" />
       {/* <meta name="viewport" content="width=device-width, initial-scale=1.0"/> */}
       <meta name="theme-color" content={themeColor}></meta>
       {/* facebook cards */}
